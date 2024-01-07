@@ -32,5 +32,3 @@ async function run() {
   //   const deleteUser = await users.deleteMany({ age: { $gt: 20 } });
   //   console.log(deleteUser);
 }
-
-run();
