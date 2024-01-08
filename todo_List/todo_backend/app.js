@@ -1,10 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
 
 const app = express();
+
 app.use(bodyParser.json());
+app.use(cors());
 app.use('/api', indexRouter);
 
 const dbUri = 'mongodb://localhost:27017/toDo3';

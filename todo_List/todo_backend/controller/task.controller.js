@@ -27,10 +27,9 @@ taskController.getTask = async (req, res) => {
 // 수정 API
 taskController.updateTask = async (req, res) => {
   try {
-    const { task, isComplete } = req.body;
+    const { isComplete } = req.body;
     const updateTask = await Task.findById(req.params.id);
 
-    updateTask.task = task;
     updateTask.isComplete = isComplete;
 
     await updateTask.save();
