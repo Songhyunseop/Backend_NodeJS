@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "mongoose": "^8.0.3",
     "validator": "^13.11.0"
