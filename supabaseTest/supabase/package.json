@@ -1,0 +1,10 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.41.1",
+    "dotenv": "^16.4.5"
+  }
+}
